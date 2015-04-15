@@ -6,6 +6,10 @@ It is a slightly tweaked version of what you get when you run:
 
     composer create-project -s dev slim/slim mytestapp dev-develop
 
+## composer install
+
+Note that you have to run `composer install` yourself - the vagrant provisioning doesn't do it for you.
+
 ## Hosts for vagrant VM:
 
 `/etc/hosts` should have:
