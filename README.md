@@ -22,3 +22,12 @@ if you don't have the vagrant-hostsupdater plugin installed.
 
 * `http://profile-test.dev` to view the hellow world page
 * `http://profiler.profile-test.dev` to view the XHGUI profiles
+
+
+## Ngrok
+
+To expose the profiler information to the Internet via ngrok:
+
+    ngrok -subdomain profiler-profile-test profile-test.dev:80
+
+Obviously if that subdomain is in use, then you'll need to create a different one and edit the `server_ngrok_alias` setting in `vm-provisioning/variables.yml` and then `vagrant provision`.
