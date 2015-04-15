@@ -1,0 +1,20 @@
+---
+# MySQL
+mysql_root_password: myrootpassword
+mysql_dbname:        mydatabasename
+mysql_username:      myusername
+mysql_password:      mypassword
+
+# set seed_database to false if you don't want to seed the database
+seed_database: false
+seed_database_file: /vagrant/docs/mydatabasebackup.sql
+
+# Apache vhost
+server_name:        profile-test.dev
+server_ngrok_alias: profile-test
+apache_doc_root:    /public
+apache_additional: |
+        SetEnv APPLICATION_ENV vagrant
+
+# Install XHGui profiler?
+install_profiler: true
