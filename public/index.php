@@ -1,5 +1,4 @@
 <?php
-phpinfo();exit;
 require '../vendor/autoload.php';
 
 $app = new \Slim\App();
